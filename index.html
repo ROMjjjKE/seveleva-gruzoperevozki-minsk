@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Грузоперевозки Минск 24/7 — переезды, мебель, мусор | ИП Севелёва: до 3 тонн, 20 куб.м</title>
-<meta name="description" content="Грузоперевозки по Минску и РБ до 3 тонн, 20 куб.м. Квартирные, дачные, офисные переезды; доставка мебели; стройматериалы до 6 метров; пианино; вывоз мусора. 24/7, без выходных, опытные грузчики. Звоните: +375 29 346-28-75.">
+<meta name="description" content="Грузоперевозки по Минску и РБ до 3 тонн, 20 куб.м. Квартирные, дачные, офисные переезды; доставка мебели; стройматериалы до 6 метров; пианино; вывоз мусора, аренда грузо-пассажирского микроавтобуса (6 мест + водитель). 24/7, без выходных, опытные грузчики. Звоните: +375 29 346-28-75, +375 44 748-32-25.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800;900&family=Lora:wght@400;500&display=swap" rel="stylesheet">
@@ -38,6 +38,8 @@ header{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.94);backdr
 nav.main{display:flex;gap:4px}
 nav.main a{font-weight:800;text-transform:uppercase;font-size:13.5px;padding:10px 13px;color:#404040}
 nav.main a:hover{color:var(--orange)}
+.htel2{display:none}
+@media(min-width:1080px){.htel2{display:inline}}
 .htel{background:var(--orange);color:#fff;font-weight:800;text-transform:uppercase;font-size:14px;padding:11px 18px;border-radius:4px;letter-spacing:.05em}
 .htel:hover{background:#D94400}
 .burger{display:none;background:none;border:1px solid var(--ash);border-radius:4px;padding:9px 10px;cursor:pointer}
@@ -142,19 +144,20 @@ footer{border-top:1px solid var(--ink);background:#fff;padding:30px 0}
   <a href="#top" class="logo"><b>Севелёва <i>·</i> Груз 24/7</b><span>грузоперевозки, переезды, вывоз мусора</span></a>
   <nav class="main"><a href="#uslugi">Услуги</a><a href="#avtopark">Автопарк</a><a href="#kak">Как работаем</a><a href="#voprosy">Вопросы</a></nav>
   <a class="htel" href="tel:+375293462875">+375 29 346-28-75</a>
+  <a class="htel htel2" href="tel:+375447483225">+375 44 748-32-25</a>
   <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
  </div>
 </header>
 <div class="mnav" id="mnav">
  <button class="mx" id="mx" aria-label="Закрыть">×</button>
- <a href="#uslugi">Услуги</a><a href="#avtopark">Автопарк</a><a href="#kak">Как работаем</a><a href="#voprosy">Вопросы</a><a href="tel:+375293462875">+375 29 346-28-75</a>
+ <a href="#uslugi">Услуги</a><a href="#avtopark">Автопарк</a><a href="#kak">Как работаем</a><a href="#voprosy">Вопросы</a><a href="tel:+375293462875">+375 29 346-28-75</a><a href="tel:+375447483225">+375 44 748-32-25</a>
 </div>
 
 <main id="top">
 <section class="hero">
  <div class="hero-l">
   <div class="kick rv">Минск · грузоперевозки и переезды</div>
-  <h1 class="rv">Переезды и грузоперевозки <em>24/7</em></h1>
+  <h1 class="rv">Грузоперевозки, переезды, <em>вывоз мусора</em></h1>
   <p class="rv">По Минску и всей Беларуси: до <b>3 тонн</b> и <b>20 куб.м</b>. Квартирные, дачные и офисные переезды, доставка мебели, стройматериалы до 6 метров, пианино, вывоз мусора и старой мебели. В любое время суток и без выходных — с опытными и аккуратными грузчиками.</p>
   <div class="hbtns rv">
    <a class="btn" href="tel:+375293462875">Позвонить: 346-28-75</a>
@@ -162,7 +165,7 @@ footer{border-top:1px solid var(--ink);background:#fff;padding:30px 0}
   </div>
  </div>
  <div class="hero-r">
-  <img src="img/t1-loaded.jpg" alt="Грузоперевозки Минск — фургон до 3 тонн загружен досками">
+  <img src="img/hero-front.jpg" alt="Грузоперевозки Минск — фургон до 3 тонн на трассе">
   <div class="cap">Фургон 3 т · 20 куб.м</div>
  </div>
 </section>
@@ -191,6 +194,7 @@ footer{border-top:1px solid var(--ink);background:#fff;padding:30px 0}
    <div class="svc rv"><svg viewBox="0 0 24 24"><path d="M3 20L21 4M21 4h-6M21 4v6M4 9l7 7M3 16l5 5"/></svg><b>Стройматериалы</b><p>доски, профнастил, панели длиной до 6 метров</p></div>
    <div class="svc rv"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M8 6v12M12 6v12M16 6v12"/></svg><b>Пианино</b><p>тяжёлые и габаритные вещи — погрузим и поднимем аккуратно</p></div>
    <div class="svc rv"><svg viewBox="0 0 24 24"><path d="M5 7h14l-1.5 12h-11zM9 7V5a3 3 0 016 0v2M9 11v4M15 11v4"/></svg><b>Вывоз мусора</b><p>строительный и бытовой — увезём сразу после работ</p></div>
+   <div class="svc rv"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="8" cy="16" r="1.6"/><circle cx="16" cy="16" r="1.6"/><path d="M7 10h4M13 10h4"/></svg><b>Аренда микроавтобуса</b><p>грузо-пассажирский, 6 посадочных мест + водитель, 10 куб.м — на любой срок</p></div>
    <div class="svc rv"><svg viewBox="0 0 24 24"><path d="M4 11h16M7 11V6h10v5M6 11l1 9h10l1-9M10 15h4"/></svg><b>Вывоз мебели</b><p>старая мебель и техника — освободим квартиру или офис</p></div>
   </div>
  </div>
@@ -275,13 +279,14 @@ footer{border-top:1px solid var(--ink);background:#fff;padding:30px 0}
  <div class="kick rv">Звоните в любое время — даже ночью</div>
  <h2 class="rv">Машина и грузчики — по одному звонку</h2>
  <a class="tel rv" href="tel:+375293462875">+375 29 346-28-75</a>
+ <a class="tel rv" href="tel:+375447483225">+375 44 748-32-25</a>
  <p class="rv">Грузоперевозки · переезды · вывоз мусора — 24/7, Минск и вся РБ</p>
 </section>
 
 <footer>
  <div class="wrap frow">
   <div><b>ИП Севелёва М.С.</b> · УНП 192275153 · Минск</div>
-  <div>24/7 без выходных · <a href="https://wa.me/375293462875" style="text-decoration:underline">WhatsApp</a> · +375 29 346-28-75</div>
+  <div>24/7 без выходных · <a href="https://wa.me/375293462875" style="text-decoration:underline">WhatsApp</a> · +375 29 346-28-75 · +375 44 748-32-25</div>
   <div>Макет: SiteFast.by</div>
  </div>
 </footer>
